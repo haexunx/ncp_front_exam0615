@@ -24,7 +24,7 @@ docker build \
 docker run -d \
   --name "$CONTAINER_NAME" \
   -p 80:80 \
-  -e BACKEND_HOST="$BACKEND_HOST"
+  -e BACKEND_HOST="$BACKEND_HOST" \
   --restart unless-stopped \
   "$IMAGE_NAME"
 
