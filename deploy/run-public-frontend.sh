@@ -8,7 +8,7 @@ CONTAINER_NAME="my-diary-frontend"
 BACKEND_HOST="${BACKEND_HOST:-10.10.2.6}"
 
 # 컨테이너 실행 시에 변수 주입 필요
-FRONTEND_NAME="${hostname}"
+FRONTEND_NAME="$(hostname)"
 
 cd "$(dirname "$0")/.."
 
